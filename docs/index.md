@@ -19,9 +19,9 @@ Si on se tourne vers [Wikipédia](https://wikipedia.org/), on trouve la définit
 
 Comme indiqué dans le dernier paragraphe, c'est aussi un langage utilisé dans l'enseignement de l'informatique des cursus français, un peu ce qu'était le LSE (_Language Symbolique d'Enseignement_ et non _Langage Simplifié pour Enseignant_ comme certaines mauvaises langues l'ont appelées) à son époque.
 
-Parmis ces avantages notons que c'est un langage interprété, c'est à dire qu'il s'exécute directement en fournissant à un interpréteur de commandes, soit des commandes directes, soit un fichiers texte qui les regroupe. Ça facilite grandement la saisie d'un programme et son exécution ou son test.
+Parmis ces avantages notons que c'est un langage interprété, c'est à dire qu'il s'exécute directement en fournissant à un interpréteur de commandes, soit des commandes directes, soit un fichier texte qui les regroupe. Ça facilite grandement la saisie d'un programme, son exécution ou son test.
 
-C'est aussi un langage structuré, impératif et objet, c'est à dire qu'il s'exécute dans un ordre imposé par le programme en suivant des structures d'exécution comme des conditions ou des répétitions. On verra aussi qu'il est dit "objet" ce qui permet de regrouper les données et les fonctions qui s'y appliquent dans des classes. Au-delà de sa syntaxe, nous n'irons pas plus loin dans les spécificités des objets (polymorphisme par exemple).
+C'est aussi un langage **structuré**, **impératif** et **objet**, c'est à dire qu'il s'exécute dans un ordre imposé par le programme en suivant des *structures* d'exécution comme des conditions ou des répétitions. On verra aussi qu'il est dit *objet* ce qui permet de regrouper les données et les fonctions qui s'y appliquent dans des classes. Au-delà de sa syntaxe, nous n'irons pas plus loin dans les spécificités des objets (polymorphisme par exemple).
 
 ## 2. Installation de l'IDE
 L'IDE, c'est un outil de développement qui facilite l'édition et l'exécution du code Python. Il se trouve que l'IDE que je vous propose d'installer vient avec son interpréteur Python (presque la dernière version) ce qui vous simplifiera la tache d'installation.
