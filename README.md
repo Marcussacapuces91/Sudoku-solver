@@ -4,7 +4,7 @@ Une application éducative de résolution de Sudoku avec interface TKinter.
 Cette application n'est qu'un prétexte à l'apprentissage de Python et de la programmation.
  
 ## Formation
-	[Support de cours](https://marcussacapuces91.github.io/Sudoku-solver/)
+[Support de cours](https://marcussacapuces91.github.io/Sudoku-solver/)
  
 ## Licence
 Copyright 2020 Marc SIBERT
