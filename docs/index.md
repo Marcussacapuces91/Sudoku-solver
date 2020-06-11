@@ -28,14 +28,63 @@ L'IDE, c'est un outil de développement qui facilite l'édition et l'exécution 
 
 J'ai choisi un IDE qui n'embarque pas de complexité, mais qui pourra être limité si vous souhaitez avoir une activité intense de développement... ça vous laisse une marge quand même !
 
-Le produit choisi s'appelle [**Thonny** Python IDE for beginners](https://thonny.org/) qui s'installe automatiquement sur votre poste, incluant donc l'interpréteur Python, et vous permettant le développement dans un environnement fenêtré (pas en ligne de commande :-) ). Vous retrouvez le lien de téléchargement en haut à droite de la page web d'accueil : https://thonny.org/
+Le produit choisi s'appelle [**Thonny** Python IDE for beginners](https://thonny.org/) qui s'installe automatiquement sur votre poste, incluant donc l'interpréteur Python, et vous permettant le développement dans un environnement fenêtré (pas en ligne de commande :-) ). Vous retrouvez le lien de téléchargement en haut à droite de la page web d'accueil : https://thonny.org/
 
 Il vous suffira ensuite d'exécuter le fichier d'installation pour qu'il s'installe sur votre poste. Comme c'est un logiciel publié sous licence libre (License MIT), vous pouvez l'utiliser sans restriction ni paiement d'un droit d'utilisation. Il en va de même pour l'interpréteur Python associé bien qu'il soit placé sous une autre licence libre (la *PSF* (Python Software Foundation) *Licence Agreement*).
 
-Une fois installé, vous devriez avoir une nouvelle icone disponible sur le « Bureau » ou dans votre menu de lancement.
+Une fois installé, vous devriez avoir une nouvelle icone disponible sur le « Bureau » ou dans votre menu de lancement.
 
 ![Thonny's Icon](Thonny.png)
 
-Vous pouvez lancer l'IDE de Python.
+Vous pouvez lancer l'IDE de Python :
+![IDE Vide](Thonny-vide.png)
 
 ## 3. Bonjour Monde !
+Notre première commande, un grand classique de la programmation, est de faire afficher une chaine de caractère.
+
+Dans la console, tappons la séquence `print("Hello World")`.
+
+Vous verrez apparaitre :
+
+	Python 3.7.7 (bundled)
+	>>> print("Hello World")
+	Hello World
+	>>> 
+
+Voilà, il s'agit de l'exécution d'une commande en mode interactif_.
+
+Maintenant, allez dans la fenêtre qui s'appelle encore `<untitled>` pour y placer la même commande `print("Hello World")`.
+
+Ensuite allez dans le menu `Fichier` et choisissez `Enregistrer`, ou encore utilisez le raccourcis `Ctrl+S`. Une fenetre va s'ouvrir pour permettre de sauvegarder votre fichier, vous pouvez l'appeler `exercice1.py` et valider.
+
+Vous pouvez maintenant lancer le programme avec le bouton `Exécuter`.<br/>![](executer.png)
+
+Lancer un nouveau programme (`Fichier` > `Nouveau` ou `Ctrl+N`), puis recopiez ou juste copier/coller le code ci-dessous dans la fenêtre que vous enregistrerez sous le nom `exercice2.py` :
+
+	"""Exercice 2"""
+	
+	class Application:
+	    """Ceci est notre classe Application"""
+	
+	    def run(self) -> None:
+	        """Cette méthode imprime "Bonjour Monde" en anglais."""
+	        print("Hello World")
+	
+	app = Application()
+	app.run()
+
+Il s'agit d'une application en programmation objet (une **classe**) qui réalise la même chose que précédemment.
+
+> Les textes compris entre les triples apostrophes """ sont des commentaires.
+
+On commence par définir une classe nommée `Application` dans laquelle est définie la **méthode** `run()`. Cette méthode attend un paramètre unique qui est l'instance de la classe à laquelle elle appartient (`self`). Cette méthode ne retourne pas de résultat (`-> None`) ; elle imprime un message dans la console.
+
+Ensuite, on crée une instance `app`de la classe `Application`, puis nous appelons la méthode `run()`.
+
+
+
+
+
+
+
+
