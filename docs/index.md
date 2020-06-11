@@ -51,7 +51,7 @@ Vous verrez apparaitre :
 	Hello World
 	>>> 
 
-Voilà, il s'agit de l'exécution d'une commande en mode interactif_.
+Voilà, il s'agit de l'exécution d'une commande en mode _interactif_.
 
 Maintenant, allez dans la fenêtre qui s'appelle encore `<untitled>` pour y placer la même commande `print("Hello World")`.
 
@@ -59,9 +59,10 @@ Ensuite allez dans le menu `Fichier` et choisissez `Enregistrer`, ou encore util
 
 Vous pouvez maintenant lancer le programme avec le bouton `Exécuter`.<br/>![](executer.png)
 
+#### La Classe
 Lancer un nouveau programme (`Fichier` > `Nouveau` ou `Ctrl+N`), puis recopiez ou juste copier/coller le code ci-dessous dans la fenêtre que vous enregistrerez sous le nom `exercice2.py` :
 
-	"""Exercice 2"""
+	"""Exercice 2a"""
 	
 	class Application:
 	    """Ceci est notre classe Application"""
@@ -77,14 +78,42 @@ Il s'agit d'une application en programmation objet (une **classe**) qui réalise
 
 > Les textes compris entre les triples apostrophes """ sont des commentaires.
 
+#### La Méthode
 On commence par définir une classe nommée `Application` dans laquelle est définie la **méthode** `run()`. Cette méthode attend un paramètre unique qui est l'instance de la classe à laquelle elle appartient (`self`). Cette méthode ne retourne pas de résultat (`-> None`) ; elle imprime un message dans la console.
 
 Ensuite, on crée une instance `app`de la classe `Application`, puis nous appelons la méthode `run()`.
 
+#### Le Constructeur
+Pour chaque classe, il existe une méthode spécifique qui est exécutée automatiquement à l'initialisation de chaque instance. Il s'agit du **constructeur** ; il se définit sous la forme d'une méthode ayant un nom réservé :
 
+	def __init__(self, chaine) :
+		self._nom = chaine
+		pass()
 
+Dans l'exemple précédent, le constructeur accepte un paramètre qui permet d'initiliser l'attribut `_nom`. Avec son *tiret bas*, cet attribut est en plus **privé** ce qui interdit son utilisation en dehors de l'instance (il ne s'agit que d'une convention puisque Python n'interdit en fait rien).
 
+#### Les Attributs
+Cette méthode est appelée sur l'instance nouvellement créée et permet d'initialiser les **attributs** de cette instance. Ces attributs sont des variables associées à cette instance ou parfois à la classe (attributs de classe). Dans ce dernier cas, ces attributs sont _partagés_ entre toutes les instances de la même classe.
 
+Les attributs initialisés après la déclaration de la classe... sont des attributs de classe, alors que les attributs définis dans le **constructeur** sont des attributs d'instance.
 
+Mettons à jour l'exercice 2 :
+
+	"""Exercice 2b"""
+	
+	class Application:
+	    """Ceci est notre classe Application"""
+	
+	    def __init__(self, chaine) -> None:
+	        self._nom = chaine
+	
+	    def run(self) -> None:
+	        """Cette méthode imprime "Bonjour " + nom + "!" en anglais."""
+	        print("Hello " + self._nom + "!")
+	
+	app = Application("Le Maître du Monde")
+	app.run()
+
+Pour aller plus loin dans les classes, je vous invite à consulter la documentation en ligne de Python : [https://docs.python.org/fr/3/tutorial/classes.html](https://docs.python.org/fr/3/tutorial/classes.html).
 
 
