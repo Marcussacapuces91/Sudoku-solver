@@ -78,7 +78,7 @@ Il s'agit d'une application en programmation objet (une **classe**) qui réalise
 
 > Les textes compris entre les triples apostrophes """ sont des commentaires.
 
-#### La Méthode
+#### Les Méthodes
 On commence par définir une classe nommée `Application` dans laquelle est définie la **méthode** `run()`. Cette méthode attend un paramètre unique qui est l'instance de la classe à laquelle elle appartient (`self`). Cette méthode ne retourne pas de résultat (`-> None`) ; elle imprime un message dans la console.
 
 Ensuite, on crée une instance `app`de la classe `Application`, puis nous appelons la méthode `run()`.
