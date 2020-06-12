@@ -1,5 +1,7 @@
 # Jour 1 : Le langage Python, l'IDE et la Classe (!)
 
+> Retour au [Sommaire](index.md)
+
 ## 1. Mais Python, c'est quoi ?
 Si on se tourne vers [Wikipédia](https://wikipedia.org/), on trouve la définition suivante pour le [langage Python](https://fr.wikipedia.org/wiki/Python_(langage)) :
 
@@ -52,7 +54,7 @@ Ensuite allez dans le menu `Fichier` et choisissez `Enregistrer`, ou encore util
 
 Vous pouvez maintenant lancer le programme avec le bouton `Exécuter`.<br/>![](executer.png)
 
-#### La Classe
+### La Classe
 Lancer un nouveau programme (`Fichier` > `Nouveau` ou `Ctrl+N`), puis recopiez ou juste copier/coller le code ci-dessous dans la fenêtre que vous enregistrerez sous le nom `exercice2.py` :
 
 	"""Exercice 2a"""
@@ -71,12 +73,12 @@ Il s'agit d'une application en programmation objet (une **classe**) qui réalise
 
 > Les textes compris entre les triples apostrophes """ sont des commentaires.
 
-#### Les Méthodes
+### Les Méthodes
 On commence par définir une classe nommée `Application` dans laquelle est définie la **méthode** `run()`. Cette méthode attend un paramètre unique qui est l'instance de la classe à laquelle elle appartient (`self`). Cette méthode ne retourne pas de résultat (`-> None`) ; elle imprime un message dans la console.
 
 Ensuite, on crée une instance `app` de la classe `Application`, puis nous appelons la méthode `run()`.
 
-#### Le Constructeur
+### Le Constructeur
 Pour chaque classe, il existe une méthode spécifique qui est exécutée automatiquement à l'initialisation de chaque instance. Il s'agit du **constructeur** ; il se définit sous la forme d'une méthode ayant un nom réservé :
 
 	def __init__(self, chaine) :
@@ -108,3 +110,5 @@ Mettons à jour l'exercice 2 :
 	app.run()
 
 Pour aller plus loin dans les classes, je vous invite à consulter la documentation en ligne de Python : [https://docs.python.org/fr/3/tutorial/classes.html](https://docs.python.org/fr/3/tutorial/classes.html).
+
+> Jour 2 : [Premier objet - Tout est dans la matrice](jour 2.md)
