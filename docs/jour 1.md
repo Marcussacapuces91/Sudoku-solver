@@ -1,6 +1,10 @@
-# Jour 1 : Le langage Python, l'IDE et la Classe (!)
+# Jour 1 : Le langage Python, l'IDE et la Classe (!)
 
-> Retour au [Sommaire](index.md)
+---
+
+- Retour au [Sommaire](index.md)
+
+---
 
 ## 1. Mais Python, c'est quoi ?
 Si on se tourne vers [Wikipédia](https://wikipedia.org/), on trouve la définition suivante pour le [langage Python](https://fr.wikipedia.org/wiki/Python_(langage)) :
@@ -83,6 +87,7 @@ Pour chaque classe, il existe une méthode spécifique qui est exécutée automa
 
 	def __init__(self, chaine) :
 		self._nom = chaine
+
 		pass()
 
 Dans l'exemple précédent, le constructeur accepte un paramètre qui permet d'initialiser l'attribut `_nom`. Avec son *tiret bas*, cet attribut est en plus **privé** ce qui interdit son utilisation en dehors de l'instance (il ne s'agit que d'une convention puisque Python n'interdit en fait rien).
@@ -111,4 +116,8 @@ Mettons à jour l'exercice 2 :
 
 Pour aller plus loin dans les classes, je vous invite à consulter la documentation en ligne de Python : [https://docs.python.org/fr/3/tutorial/classes.html](https://docs.python.org/fr/3/tutorial/classes.html).
 
-> Jour 2 : [Premier objet - Tout est dans la matrice](jour 2.md)
+---
+
+- Jour 2 : [Premier objet - Tout est dans la matrice](jour 2.md)
+
+---
