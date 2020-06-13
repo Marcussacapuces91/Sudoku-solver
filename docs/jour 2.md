@@ -11,7 +11,7 @@ Dans le cadre de notre développement, nous allons commencer par développer la 
 
 Aujourd'hui, nous allons donc modéliser et développer la matrice du Sudoku qui porte les chiffres.
 
-## 1. La Classe
+## 1. La Classe (la vraie)
 
 Au départ cette classe est donc une matrice de 9x9. Il va falloir lui adjoindre un certain nombre de méthodes permettant de la manipuler (la modifier, l'afficher, _etc._)
 
@@ -202,6 +202,7 @@ def resoudre(self) -> bool:
         - Essayer tous les nombres de 1 à 9 ;
         - Si c'est une matrice valide, appliquer la même méthode recursivement ;
         - Si le résultat est bon, succès ; sinon essayer encore."""
+
     try:
         x, y = self._unVide()
     except Exception:
