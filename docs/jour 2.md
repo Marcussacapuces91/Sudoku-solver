@@ -3,7 +3,7 @@
 ---
 
 - Retour au [Sommaire](index.md)
-- Jour 1 : [Le langage Python, l'IDE et la Classe (!)](jour 1.md)
+- Jour 1 : [Le langage Python, l'IDE et la Classe (!)](jour%201.md)
 
 ---
 
@@ -404,7 +404,7 @@ if __name__ == "__main__":
 
 ---
 
-- Jour 3 : [Interface graphique : TKinter](jour 3.md)
+- Jour 3 : [Interface graphique : TKinter](jour%203.md)
 
 ---
 
