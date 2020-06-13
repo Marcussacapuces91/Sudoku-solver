@@ -3,7 +3,7 @@
 ---
 
 - Retour au [Sommaire](index.md)
-- Jour 2 : [Premier objet - Tout est dans la matrice](jour%201.md)
+- Jour 2 : [Premier objet - Tout est dans la matrice](jour%202.md)
 
 ---
 
