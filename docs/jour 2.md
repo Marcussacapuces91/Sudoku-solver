@@ -27,7 +27,7 @@ class Matrice:
     """La Matrice est l'objet qui contient tous les chiffres du Sudoku dans un tableau de 9x9"""
 
     def __init__(self, init : [] = None) -> None:
-        """Constructeur de l'instance qui initialise la matrice 9*9 à partir d'un tableau existant,
+        """Constructeur de l'instance qui initialise la matrice 9x9 à partir d'un tableau existant,
             s'il est transmis, à vide sinon."""
         if init == None:
             self._matrice = [[None] * 9] * 9
@@ -215,12 +215,10 @@ def resoudre(self) -> bool:
     return False
 ```
 
-C'est KISS[^1] et ça fonctionne. On vient de réaliser une méthode recursive pour résoudre un problème simplement en définissant une seule itération et ses conditions de sortie.
+C'est KISS (_Keep It Simple, Stupid_) et ça fonctionne. On vient de réaliser une méthode recursive pour résoudre un problème simplement en définissant une seule itération et ses conditions de sortie.
 
 > _Comme c'est beau la programmation !_  
 > _Coding Is Poetry_
-
-[^1]: _Keep It Simple, Stupid_
 
 
 
