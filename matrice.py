@@ -47,7 +47,7 @@ class Matrice:
         assert (x <= 9), "Hors interval (sup. à 9)"
         self._matrice[y][x] = value
         
-    def _tester(self) -> bool:
+    def tester(self) -> bool:
         """Cette méthode vérifie la validité de la matrice et la retourne sous la forme d'un booléen."""
 # Test par ligne
         for y in range(9):
@@ -101,7 +101,7 @@ class Matrice:
             return True
         for n in range(9):
             self[x,y] = n + 1;
-            if self._tester() and self.resoudre():
+            if self.tester() and self.resoudre():
                 return True
         self[x,y] = None
         return False
