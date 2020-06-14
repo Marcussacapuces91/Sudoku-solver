@@ -106,20 +106,21 @@ Les attributs initialisés après la déclaration de la classe... sont des attri
 Mettons à jour l'exercice 2 :
 
 ```python3
-	"""Exercice 2b"""
+"""Exercice 2b"""
 
-	class Application:
-	    """Ceci est notre classe Application"""
+class Application:
+    """Ceci est notre classe Application"""
 
-	    def __init__(self, chaine) -> None:
-	        self._nom = chaine
+    def __init__(self, chaine) -> None:
+        self._nom = chaine
 
-	    def run(self) -> None:
-	        """Cette méthode imprime "Bonjour " + nom + "!" en anglais."""
-	        print("Hello " + self._nom + "!")
+    def run(self) -> None:
+        """Cette méthode imprime "Bonjour " + nom + "!" en anglais."""
+        print("Hello " + self._nom + "!")
 
-	app = Application("Le Maître du Monde")
-	app.run()
+app = Application("Le Maître du Monde")
+app.run()
+```
 
 Pour aller plus loin dans les classes, je vous invite à consulter la documentation en ligne de Python : [https://docs.python.org/fr/3/tutorial/classes.html](https://docs.python.org/fr/3/tutorial/classes.html).
 
