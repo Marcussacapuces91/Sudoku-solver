@@ -45,10 +45,12 @@ Dans la console, tapons la séquence `print("Hello World")`.
 
 Vous verrez apparaitre :
 
-	Python 3.7.7 (bundled)
-	>>> print("Hello World")
-	Hello World
-	>>>
+```python3
+Python 3.7.7 (bundled)
+>>> print("Hello World")
+Hello World
+>>>
+```
 
 Voilà, il s'agit de l'exécution d'une commande en mode _interactif_.
 
@@ -61,17 +63,19 @@ Vous pouvez maintenant lancer le programme avec le bouton `Exécuter`.<br/>![](e
 ### La Classe
 Lancer un nouveau programme (`Fichier` > `Nouveau` ou `Ctrl+N`), puis recopiez ou juste copier/coller le code ci-dessous dans la fenêtre que vous enregistrerez sous le nom `exercice2.py` :
 
-	"""Exercice 2a"""
+```python3
+"""Exercice 2a"""
 
-	class Application:
-	    """Ceci est notre classe Application"""
+class Application:
+    """Ceci est notre classe Application"""
 
-	    def run(self) -> None:
-	        """Cette méthode imprime "Bonjour Monde" en anglais."""
-	        print("Hello World")
+    def run(self) -> None:
+        """Cette méthode imprime "Bonjour Monde" en anglais."""
+        print("Hello World")
+```
 
-	app = Application()
-	app.run()
+app = Application()
+app.run()
 
 Il s'agit d'une application en programmation objet (une **classe**) qui réalise la même chose que précédemment.
 
@@ -85,10 +89,12 @@ Ensuite, on crée une instance `app` de la classe `Application`, puis nous appel
 ### Le Constructeur
 Pour chaque classe, il existe une méthode spécifique qui est exécutée automatiquement à l'initialisation de chaque instance. Il s'agit du **constructeur** ; il se définit sous la forme d'une méthode ayant un nom réservé :
 
-	def __init__(self, chaine) :
-		self._nom = chaine
+```python3
+def __init__(self, chaine) :
+	self._nom = chaine
 
-		pass()
+	pass()
+```
 
 Dans l'exemple précédent, le constructeur accepte un paramètre qui permet d'initialiser l'attribut `_nom`. Avec son *tiret bas*, cet attribut est en plus **privé** ce qui interdit son utilisation en dehors de l'instance (il ne s'agit que d'une convention puisque Python n'interdit en fait rien).
 
@@ -99,6 +105,7 @@ Les attributs initialisés après la déclaration de la classe... sont des attri
 
 Mettons à jour l'exercice 2 :
 
+```python3
 	"""Exercice 2b"""
 
 	class Application:
