@@ -17,7 +17,7 @@ Au départ cette classe est donc une matrice de 9x9. Il va falloir lui adjoindre
 
 Voici donc un code qui permet d'assurer ces premiers besoins (`exercice3.py`) :
 
-```
+```python3
 #!/usr/bin/python
 # -*- coding: <encoding name> -*-
 
@@ -133,7 +133,7 @@ Afin de limiter la consommation de mémoire du programme, on va aussi utiliser u
 
 Il nous faut donc d'abord une méthode qui nous indique la validité d'une grille et qui sera définie dans la classe `Matrice` :
 
-```
+```python3
 def _tester(self) -> bool:
     """Cette méthode vérifie la validité de la matrice et la retourne sous la forme d'un booléen."""
 # Test par ligne
@@ -195,7 +195,7 @@ C'est finalement assez facile de résoudre un Sudoku. Il suffit de :
 
 Ecrivons ça, sans plus réfléchir :
 
-```
+```python3
 def resoudre(self) -> bool:
     """Cette méthode résoud la matrice de manière récursive dans la séquence suivante :
         - Chercher un emplacement libre, sinon on a terminé avec succès !
@@ -222,17 +222,14 @@ C'est KISS (_Keep It Simple, Stupid_) et ça fonctionne. On vient de réaliser u
 
 ## 3. Fichier complet
 
-```
+Vous retrouverez ce fichier sous le nom `matrice.py`.
+
+```python3
 #!/usr/bin/python
 # -*- coding: <encoding name> -*-
 
-"""Exercice 3"""
+"""Définition de la classe Matrice qui modélise et résoud le SudoKu."""
 
-import logging
-
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
-    
 class Matrice:
     """La Matrice est l'objet qui contient tous les chiffres du Sudoku dans un tableau de 9x9"""
 
@@ -340,7 +337,6 @@ class Matrice:
         
 
 if __name__ == "__main__":
-    logger.info("Démarrage du programme")
     if False:
 # Difficile        
         matrice = Matrice([
@@ -398,8 +394,6 @@ if __name__ == "__main__":
     
     matrice.resoudre()
     matrice.afficher()
-    
-    logger.info("Arrêt du programme")
 ```
 
 
