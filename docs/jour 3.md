@@ -105,7 +105,9 @@ Pour terminer, on ajoute une dernière _Frame_ qui contient elle-même deux _But
 
 #### Les _callback_
 
-C'est une méthode qui est appelée automatiquement par le framework Tk lorsqu'un évènement survient. Dans notre cas, c'est utilisé pour les _Button_ afin qu'ils indiquent à notre instance que l'un d'eux a été cliqué.
+Les _callback_ sont des méthodes qui sont définies par l'utilisateur mais appelées automatiquement par l'environnement (le _framework_ Tkinter) lorsque des évènements surviennent.
+
+Dans notre cas, c'est utilisé par les _Button_ afin qu'ils indiquent à notre instance que l'un d'eux a été cliqué.
 
 On devra donc ajouter une option supplémentaire à chacun de nos boutons, ainsi que les méthodes associées :
 
