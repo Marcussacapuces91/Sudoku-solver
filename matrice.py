@@ -7,28 +7,27 @@ class Matrice:
     def __init__(self, init : [] = None) -> None:
         """Constructeur de l'instance qui initialise la matrice 9*9 à partir d'un tableau existant,
             s'il est transmis, à vide sinon."""
-        if init == None:
-            self._matrice = [[None] * 9] * 9
-        else:
-            self._matrice = {}
+        self._matrice = []
+        for y in range(9):
+            self._matrice.append( [None] * 9 )
+        if init != None:
             for y in range(9):
-                self._matrice[y] = {}
                 for x in range(9):
                     try:
                         self._matrice[y][x] = init[y][x]
                     except IndexError:
-                        self._matrice[y][x] = None
+                        pass
             
     def afficher(self) -> None:
         """Cette méthode affiche une représentation de la matrice du Sudoku"""
-        for y in self._matrice:
-            print(self._matrice[y])
+        for l in self._matrice:
+            print(l)
             
     def _unVide(self) -> (int, int):
         """Cette méthode retourne une paire de coordonnées représentant un emplacement vide.
             Elle lance une exception quand aucune solution n'est possible (grille complète)."""
-        for y in self._matrice:
-            for x in self._matrice[y]:
+        for y in range(9):
+            for x in range(9):
                 if self[x,y] == None:
                     return x, y
         raise Exception("Grille complète") 
