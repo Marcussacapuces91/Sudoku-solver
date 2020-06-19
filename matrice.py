@@ -14,7 +14,7 @@ class Matrice:
             for y in range(9):
                 for x in range(9):
                     try:
-                        self._matrice[y][x] = init[y][x]
+                        self[x,y] = init[y][x]
                     except IndexError:
                         pass
             

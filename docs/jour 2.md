@@ -27,30 +27,29 @@ class Matrice:
     """La Matrice est l'objet qui contient tous les chiffres du Sudoku dans un tableau de 9x9"""
 
     def __init__(self, init : [] = None) -> None:
-        """Constructeur de l'instance qui initialise la matrice 9x9 à partir d'un tableau existant,
+        """Constructeur de l'instance qui initialise la matrice 9*9 à partir d'un tableau existant,
             s'il est transmis, à vide sinon."""
-        if init == None:
-            self._matrice = [[None] * 9] * 9
-        else:
-            self._matrice = {}
+        self._matrice = []
+        for y in range(9):
+            self._matrice.append( [None] * 9 )
+        if init != None:
             for y in range(9):
-                self._matrice[y] = {}
                 for x in range(9):
                     try:
-                        self._matrice[y][x] = init[y][x]
+                        self[x,y] = init[y][x]
                     except IndexError:
-                        self._matrice[y][x] = None
+                        pass
             
     def afficher(self) -> None:
         """Cette méthode affiche une représentation de la matrice du Sudoku"""
-        for y in self._matrice:
-            print(self._matrice[y])
+        for l in self._matrice:
+            print(l)
             
     def _unVide(self) -> (int, int):
         """Cette méthode retourne une paire de coordonnées représentant un emplacement vide.
             Elle lance une exception quand aucune solution n'est possible (grille complète)."""
-        for y in self._matrice:
-            for x in self._matrice[y]:
+        for y in range(9):
+            for x in range(9):
                 if self[x,y] == None:
                     return x, y
         raise Exception("Grille complète") 
@@ -68,7 +67,7 @@ class Matrice:
         assert (x >= 0), "Hors interval (négatif)"
         assert (x <= 9), "Hors interval (sup. à 9)"
         self._matrice[y][x] = value
-        
+
 
 matrice = Matrice([
     [None, None, None, None,    5, None, None,    6, None],
@@ -96,7 +95,7 @@ Vient ensuite la déclaration du constructeur avec une petite astuce ; en effet,
 
 ### Affichage
 
-Cette méthode permet d'obtenir une représentation de la matrice dans la console. On parcours chaque ligne de la matrice que l'on affiche sommairement.
+La méthode `Afficher` permet d'obtenir une représentation de la matrice dans la console. On parcours chaque ligne de la matrice que l'on affiche sommairement.
 
 ### Accesseurs
 
@@ -104,8 +103,10 @@ Les _accesseurs_ sont une typologie de methodes qui donnent accès, _d'où leur 
 
 Ici on définit deux accesseurs `__getitem__` et `__setitem__` qui permettront d'atteindre le contenu de la matrice au travers d'un appel avec l'opérateur de tableau que l'on ci-dessous :
 
-	print("Valeur de la matrice en x=0, y=1")
-    print(matrice[0,1])
+```python3
+print("Valeur de la matrice en x=0, y=1")
+print(matrice[0,1])
+```
 
 Il s'agit ici, comme pour le constructeur, de deux méthodes _magiques_ qui ne sont pas appelées directement mais qui permettent des actions en arrière plan. On verra surement plus tard d'autres méthodes magiques.
 
@@ -193,7 +194,7 @@ C'est finalement assez facile de résoudre un Sudoku. Il suffit de :
 6. sinon, essayer avec un autre nombre ;
 7. quand on a testé tous les nombres pour cette position, on la vide à nouveau (laisser propre derrière soi...)
 
-Ecrivons ça, sans plus réfléchir :
+Écrivons ça, sans plus réfléchir :
 
 ```python3
 def resoudre(self) -> bool:
@@ -228,7 +229,7 @@ Vous retrouverez ce fichier sous le nom `matrice.py`.
 #!/usr/bin/python
 # -*- coding: <encoding name> -*-
 
-"""Définition de la classe Matrice qui modélise et résoud le SudoKu."""
+"""Exercice 3"""
 
 class Matrice:
     """La Matrice est l'objet qui contient tous les chiffres du Sudoku dans un tableau de 9x9"""
@@ -236,28 +237,27 @@ class Matrice:
     def __init__(self, init : [] = None) -> None:
         """Constructeur de l'instance qui initialise la matrice 9*9 à partir d'un tableau existant,
             s'il est transmis, à vide sinon."""
-        if init == None:
-            self._matrice = [[None] * 9] * 9
-        else:
-            self._matrice = {}
+        self._matrice = []
+        for y in range(9):
+            self._matrice.append( [None] * 9 )
+        if init != None:
             for y in range(9):
-                self._matrice[y] = {}
                 for x in range(9):
                     try:
-                        self._matrice[y][x] = init[y][x]
+                        self[x,y] = init[y][x]
                     except IndexError:
-                        self._matrice[y][x] = None
+                        pass
             
     def afficher(self) -> None:
         """Cette méthode affiche une représentation de la matrice du Sudoku"""
-        for y in self._matrice:
-            print(self._matrice[y])
+        for l in self._matrice:
+            print(l)
             
     def _unVide(self) -> (int, int):
         """Cette méthode retourne une paire de coordonnées représentant un emplacement vide.
             Elle lance une exception quand aucune solution n'est possible (grille complète)."""
-        for y in self._matrice:
-            for x in self._matrice[y]:
+        for y in range(9):
+            for x in range(9):
                 if self[x,y] == None:
                     return x, y
         raise Exception("Grille complète") 
@@ -276,7 +276,7 @@ class Matrice:
         assert (x <= 9), "Hors interval (sup. à 9)"
         self._matrice[y][x] = value
         
-    def tester(self) -> bool:
+    def _tester(self) -> bool:
         """Cette méthode vérifie la validité de la matrice et la retourne sous la forme d'un booléen."""
 # Test par ligne
         for y in range(9):
@@ -330,14 +330,14 @@ class Matrice:
             return True
         for n in range(9):
             self[x,y] = n + 1;
-            if self.tester() and self.resoudre():
+            if self._tester() and self.resoudre():
                 return True
         self[x,y] = None
         return False
         
 
 if __name__ == "__main__":
-    if False:
+    if True:
 # Difficile        
         matrice = Matrice([
            [None, None, None, None,    5, None, None,    6, None],
@@ -351,7 +351,7 @@ if __name__ == "__main__":
            [None,    1, None, None,    7, None, None, None, None]
         ])
     elif False:
-# A l'envers (ligne 1 : 9 8 7 6 5 4 3 2 1)
+# A l'envers        
         matrice = Matrice([
             [None, None, None, None, None, None, None, None, None],
             [None, None, None, None, None,    3, None,    8,    5],
@@ -364,7 +364,7 @@ if __name__ == "__main__":
             [None, None, None, None,    4, None, None, None,    9],
         ])
     elif False:
-# 17 valeurs
+# 17 clue
         matrice = Matrice([
             [None, None, None, None,    4, None, None, None, None],
             [   1,    2, None, None, None, None, None,    7,    3],
@@ -377,7 +377,7 @@ if __name__ == "__main__":
             [None, None, None, None, None, None, None, None, None],
         ])
     else:
-# 18 valeurs avec symétrie verticale
+# 18 clue
         matrice = Matrice([
             [None, None, None, None, None, None, None, None, None],
             [   1,    2, None, None, None, None, None,    8,    4],
@@ -395,7 +395,6 @@ if __name__ == "__main__":
     matrice.resoudre()
     matrice.afficher()
 ```
-
 
 ---
 
