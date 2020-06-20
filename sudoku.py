@@ -22,9 +22,7 @@ class Application(Tk):
         Label(self, text="Saisir les valeurs connues et lancer la résolution").pack()
 
         megaFrame = Frame(self)
-        self._entries = []
-        for y in range(9):
-            self._entries.append( [None] * 9 )
+        self._entries = list( [None] * 9 for __ in range(9) )
         
 # 3 x 3 blocs
         for y in range(3):
