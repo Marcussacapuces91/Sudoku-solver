@@ -2,7 +2,7 @@
 
 ---
 
-- Retour au [Sommaire](index.md)
+- Retour au [Sommaire](index)
 
 ---
 
@@ -133,6 +133,6 @@ Pour aller plus loin dans les classes, je vous invite à consulter la documentat
 
 ---
 
-- Jour 2 : [Premier objet - Tout est dans la matrice](jour%202.md)
+- Jour 2 : [Premier objet - Tout est dans la matrice](jour%202)
 
 ---
