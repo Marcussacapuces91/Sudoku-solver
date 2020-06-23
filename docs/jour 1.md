@@ -48,7 +48,7 @@ Dans la console, tapons la séquence `print("Hello World")`.
 
 Vous verrez apparaitre :
 
-```python3
+```Python
 Python 3.7.7 (bundled)
 >>> print("Hello World")
 Hello World
@@ -67,7 +67,7 @@ Vous pouvez maintenant lancer le programme avec le bouton `Exécuter`.<br/>![](e
 
 Lancer un nouveau programme (`Fichier` > `Nouveau` ou `Ctrl+N`), puis recopiez ou juste copier/coller le code ci-dessous dans la fenêtre que vous enregistrerez sous le nom `exercice2.py` :
 
-```python3
+```Python
 """Exercice 2a"""
 
 class Application:
@@ -95,7 +95,8 @@ Ensuite, on crée une **instance** `app` de la classe `Application`, puis nous *
 
 Pour chaque classe, il existe une méthode spécifique qui est exécutée automatiquement à l'initialisation de chaque instance. Il s'agit du **constructeur** ; il se définit sous la forme d'une méthode ayant un nom réservé :
 
-```python3
+
+```Python
 def __init__(self, chaine) :
 	self._nom = chaine
 
@@ -112,7 +113,7 @@ Les attributs initialisés après la déclaration de la classe... sont des attri
 
 Mettons à jour l'exercice 2 :
 
-```python3
+```Python
 """Exercice 2b"""
 
 class Application:
