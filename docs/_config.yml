@@ -22,6 +22,6 @@ theme: jekyll-theme-leap-day
 
 highlighter: rouge
 
-#plugins:
+plugins:
 #  - jekyll-feed
-#  - jekyll-sitemap # I added this to automatiacally generate a sitemap.xml
+  - jekyll-sitemap # I added this to automatiacally generate a sitemap.xml
