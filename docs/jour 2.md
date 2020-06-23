@@ -17,7 +17,7 @@ Au départ cette classe est donc une matrice de 9x9. Il va falloir lui adjoindre
 
 Voici donc un code qui permet d'assurer ces premiers besoins (`exercice3.py`) :
 
-```python3
+```Python
 #!/usr/bin/python
 # -*- coding: <encoding name> -*-
 
@@ -101,7 +101,7 @@ Les _accesseurs_ sont une typologie de methodes qui donnent accès, _d'où leur 
 
 Ici on définit deux accesseurs `__getitem__` et `__setitem__` qui permettront d'atteindre le contenu de la matrice au travers d'un appel avec l'opérateur de tableau que l'on ci-dessous :
 
-```python3
+```Python
 print("Valeur de la matrice en x=0, y=1")
 print(matrice[0,1])
 ```
@@ -132,7 +132,7 @@ Afin de limiter la consommation de mémoire du programme, on va aussi utiliser u
 
 Il nous faut donc d'abord une méthode qui nous indique la validité d'une grille et qui sera définie dans la classe `Matrice` :
 
-```python3
+```Python
 def tester(self) -> bool:
     """Cette méthode vérifie la validité de la matrice et la retourne sous la forme d'un booléen."""
 # Test par ligne
@@ -194,7 +194,7 @@ C'est finalement assez facile de résoudre un Sudoku. Il suffit de :
 
 Écrivons ça, sans plus réfléchir :
 
-```python3
+```python
 def resoudre(self) -> bool:
     """Cette méthode résoud la matrice de manière récursive dans la séquence suivante :
         - Chercher un emplacement libre, sinon on a terminé avec succès !
@@ -223,7 +223,7 @@ C'est KISS (_Keep It Simple, Stupid_) et ça fonctionne. On vient de réaliser u
 
 Vous retrouverez ce fichier sous le nom `matrice.py`.
 
-```python3
+```Python
 #!/usr/bin/python
 # -*- coding: <encoding name> -*-
 
