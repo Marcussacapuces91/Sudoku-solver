@@ -1,8 +1,8 @@
 title: Sudoku-solver
 email: marc@sibert.fr
 description: "Résolveur de Sudoku en Python avec interface TKinter (TK)"
-baseurl: "" # Don't have any base path on my url. ie. /blog
-url: "https://marcussacapuces91.github.io/Sudoku-solver/" 
+# baseurl: "" # Don't have any base path on my url. ie. /blog
+# url: "https://marcussacapuces91.github.io/Sudoku-solver/" 
 # google_analytics: UA-000000000-0
 # timezone: Australia/Brisbane
 # show_excerpts: true # Show excerpts of posts on the home page
