@@ -11,13 +11,13 @@ description: "Résolveur de Sudoku en Python avec interface TKinter (TK)"
 # Social
 twitter_username: LabAllen91
 github_username: Marcussacapuces91
-#linkedin_username: nathandench
+#linkedin_username: marc-sibert-bbb878100
 
 # Build settings
-# markdown: kramdown
-kramdown:
-  syntax_highlighter_opts:
-    default_lang: python
+markdown: kramdown
+# kramdown:
+#   syntax_highlighter_opts:
+#     default_lang: python
 theme: jekyll-theme-leap-day
 #plugins:
 #  - jekyll-feed
