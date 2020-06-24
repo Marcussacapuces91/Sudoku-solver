@@ -67,7 +67,7 @@ Vous pouvez maintenant lancer le programme avec le bouton `Exécuter`.<br/>![](e
 
 Lancer un nouveau programme (`Fichier` > `Nouveau` ou `Ctrl+N`), puis recopiez ou juste copier/coller le code ci-dessous dans la fenêtre que vous enregistrerez sous le nom `exercice2.py` :
 
-{% highlight python lineno %}
+{% highlight python linenos %}
 """Exercice 2a"""
 
 class Application:
@@ -113,7 +113,7 @@ Les attributs initialisés après la déclaration de la classe... sont des attri
 
 Mettons à jour l'exercice 2 :
 
-{% highlight python lineno %}
+{% highlight python linenos %}
 """Exercice 2b"""
 
 class Application:
