@@ -47,7 +47,7 @@ Comme d'habitude maintenant le constructeur va initialiser tous les éléments d
 
 Cette fois on va aussi devoir appeler le constructeur hérité dans notre propre constructeur, avant de définir les attributs de la la fenètre et de la remplir avec des _widgets_.
 
-```Python
+```python
 def __init__(self):
     """Constructeur de l'application. Initialise l'interface graphique."""
     super().__init__(None)
@@ -118,7 +118,7 @@ Dans notre cas, c'est utilisé par les _Button_ afin qu'ils indiquent à notre i
 
 On devra donc ajouter une option supplémentaire à chacun de nos boutons, ainsi que les méthodes associées :
 
-```Python
+```python
 ...
     frameBoutons = Frame(self)
     Button(frameBoutons, text="Générer", command=self._generer).pack(side=LEFT)
@@ -147,7 +147,7 @@ Pour que cela soit « beau », on va utiliser un code couleur appliqué dans le 
 * En noir, les valeurs saisies par l'utilisateur ;
 * En bleu, les valeurs calculées par le programme.
 
-```Python
+```python
     def _generer(self):
         """Cette méthode vérifie la saisie puis transmet les valeurs à une instance de Matrice
             pour faire résoudre le Sudoku. Elle affiche le résultat, si le calcul s'est bien passé."""
@@ -187,7 +187,7 @@ Pour que cela soit « beau », on va utiliser un code couleur appliqué dans le 
 
 Pour terminer cet exercice, il nous reste à écrire la méthode qui permet d'effacer un résultat calculé. On va simplement tester la couleur d'une `Entry` pour savoir si elle est _Bleu_ et dans ce cas la vider.
 
-```Python
+```python
     def _vider(self):
         """Cette méthode vide les Entry bleu (ceux calculés précédemment),
             sans toucher aux saisies de l'utilisateur (noires)"""
