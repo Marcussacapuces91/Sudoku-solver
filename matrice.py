@@ -8,7 +8,7 @@ class Matrice:
         """Constructeur de l'instance qui initialise la matrice 9*9 à partir d'un tableau existant,
             s'il est transmis, à vide sinon."""
         self._matrice = list( [None] * 9 for __ in range(9) )
-        if not(init is None):
+        if init is not None:
             for y in range(9):
                 for x in range(9):
                     try:
