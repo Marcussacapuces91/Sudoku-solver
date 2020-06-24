@@ -67,7 +67,7 @@ Vous pouvez maintenant lancer le programme avec le bouton `Exécuter`.<br/>![](e
 
 Lancer un nouveau programme (`Fichier` > `Nouveau` ou `Ctrl+N`), puis recopiez ou juste copier/coller le code ci-dessous dans la fenêtre que vous enregistrerez sous le nom `exercice2.py` :
 
-```Python
+{% highlight python lineno %}
 """Exercice 2a"""
 
 class Application:
@@ -79,7 +79,7 @@ class Application:
 
 app = Application()
 app.run()
-```
+{% endhighlight %}
 
 Il s'agit d'une application en programmation objet (la **classe** `Application` et son **instance** `app`) qui réalise la même chose que précédemment.
 
@@ -96,12 +96,12 @@ Ensuite, on crée une **instance** `app` de la classe `Application`, puis nous *
 Pour chaque classe, il existe une méthode spécifique qui est exécutée automatiquement à l'initialisation de chaque instance. Il s'agit du **constructeur** ; il se définit sous la forme d'une méthode ayant un nom réservé :
 
 
-```Python
+{% highlight python %}
 def __init__(self, chaine) :
 	self._nom = chaine
 
 	pass()
-```
+{% endhighlight %}
 
 Dans l'exemple précédent, le constructeur accepte un paramètre qui permet d'initialiser l'attribut `_nom`. Avec son *tiret bas*, cet attribut est en plus **privé** ce qui interdit son utilisation en dehors de l'instance (il ne s'agit que d'une convention puisque Python n'interdit en fait rien).
 
@@ -113,7 +113,7 @@ Les attributs initialisés après la déclaration de la classe... sont des attri
 
 Mettons à jour l'exercice 2 :
 
-```Python
+{% highlight python lineno %}
 """Exercice 2b"""
 
 class Application:
@@ -128,7 +128,7 @@ class Application:
 
 app = Application("Le Maître du Monde")
 app.run()
-```
+{% endhighlight %}
 
 Pour aller plus loin dans les classes, je vous invite à consulter la documentation en ligne de Python : [https://docs.python.org/fr/3/tutorial/classes.html](https://docs.python.org/fr/3/tutorial/classes.html).
 
