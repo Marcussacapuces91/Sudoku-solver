@@ -130,7 +130,7 @@ app = Application("Le Maître du Monde")
 app.run()
 {% endhighlight %}
 
-Pour aller plus loin dans les classes, je vous invite à consulter la documentation en ligne de Python : [https://docs.python.org/fr/3/tutorial/classes.html](https://docs.python.org/fr/3/tutorial/classes.html).
+Pour aller plus loin dans les classes, je vous invite à consulter la documentation en ligne de Python : [https://docs.python.org/fr/3/tutorial/classes.html](https://docs.python.org/fr/3/tutorial/classes.html).
 
 ---
 
