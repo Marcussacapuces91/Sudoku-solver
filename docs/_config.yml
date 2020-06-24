@@ -20,7 +20,8 @@ markdown: kramdown
 #     default_lang: python
 theme: jekyll-theme-slate
 
-highlighter: rouge
+#highlighter: rouge
+highlighter: Pygments
 
 plugins:
 #  - jekyll-feed
