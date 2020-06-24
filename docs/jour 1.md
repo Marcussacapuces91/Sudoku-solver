@@ -48,12 +48,12 @@ Dans la console, tapons la séquence `print("Hello World")`.
 
 Vous verrez apparaitre :
 
-{% highlight python %}
+```python
 Python 3.7.7 (bundled)
 >>> print("Hello World")
 Hello World
 >>>
-{% endhighlight %}
+```
 
 Voilà, il s'agit de l'exécution d'une commande en mode _interactif_.
 
@@ -96,12 +96,12 @@ Ensuite, on crée une **instance** `app` de la classe `Application`, puis nous *
 Pour chaque classe, il existe une méthode spécifique qui est exécutée automatiquement à l'initialisation de chaque instance. Il s'agit du **constructeur** ; il se définit sous la forme d'une méthode ayant un nom réservé :
 
 
-{% highlight python %}
+```python
 def __init__(self, chaine) :
 	self._nom = chaine
 
 	pass()
-{% endhighlight %}
+```
 
 Dans l'exemple précédent, le constructeur accepte un paramètre qui permet d'initialiser l'attribut `_nom`. Avec son *tiret bas*, cet attribut est en plus **privé** ce qui interdit son utilisation en dehors de l'instance (il ne s'agit que d'une convention puisque Python n'interdit en fait rien).
 
