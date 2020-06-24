@@ -19,7 +19,7 @@ Voyez la page de cette librairie sur le site Python : [https://docs.python.org/f
 
 Cette fois on va définir une classe Application qui va hériter de la classe Tk. Elle va donc _récupérer_ toutes les méthodes et attributs de la classe mère. En particulier, après avoir initilisé notre application, il faut lancer la méthode `mainloop()` qui permet le fonctionnement des éléments de la fenètre.
 
-```Python
+```python
 #!/usr/bin/python
 # -*- coding: <encoding name> -*-
 
