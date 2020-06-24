@@ -48,12 +48,12 @@ Dans la console, tapons la séquence `print("Hello World")`.
 
 Vous verrez apparaitre :
 
-```Python
+{% highlight python %}
 Python 3.7.7 (bundled)
 >>> print("Hello World")
 Hello World
 >>>
-```
+{% endhighlight %}
 
 Voilà, il s'agit de l'exécution d'une commande en mode _interactif_.
 
