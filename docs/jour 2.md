@@ -101,10 +101,10 @@ Les _accesseurs_ sont une typologie de methodes qui donnent accès, _d'où leur 
 
 Ici on définit deux accesseurs `__getitem__` et `__setitem__` qui permettront d'atteindre le contenu de la matrice au travers d'un appel avec l'opérateur de tableau que l'on ci-dessous :
 
-{% highlight python %}
+```python
 print("Valeur de la matrice en x=0, y=1")
 print(matrice[0,1])
-{% endhighlight %}
+```
 
 Il s'agit ici, comme pour le constructeur, de deux méthodes _magiques_ qui ne sont pas appelées directement mais qui permettent des actions en arrière plan. On verra surement plus tard d'autres méthodes magiques.
 
@@ -132,7 +132,7 @@ Afin de limiter la consommation de mémoire du programme, on va aussi utiliser u
 
 Il nous faut donc d'abord une méthode qui nous indique la validité d'une grille et qui sera définie dans la classe `Matrice` :
 
-{% highlight python %}
+```python
 def tester(self) -> bool:
     """Cette méthode vérifie la validité de la matrice et la retourne sous la forme d'un booléen."""
 # Test par ligne
@@ -174,7 +174,7 @@ def tester(self) -> bool:
                     else:
                         c[s] = True
     return True						# Aucune erreur -> matrice valide
-{% endhighlight %}
+```
 
 Cette méthode va compter successivement pour chaque ligne, pour chaque colonne et pour chaque carré de 3x3, le nombre d'apparition de chaque nombre (hors `None`). Si un nombre apparait plus de 1 fois, la réponse est `False` puisque la matrice est erronnée.
 
@@ -194,7 +194,7 @@ C'est finalement assez facile de résoudre un Sudoku. Il suffit de :
 
 Écrivons ça, sans plus réfléchir :
 
-{% highlight python %}
+```python
 def resoudre(self) -> bool:
     """Cette méthode résoud la matrice de manière récursive dans la séquence suivante :
         - Chercher un emplacement libre, sinon on a terminé avec succès !
@@ -212,7 +212,7 @@ def resoudre(self) -> bool:
             return True
     self[x,y] = None			# backtrack : remise dans l'état initial
     return False
-{% endhighlight %}
+```
 
 C'est KISS (_Keep It Simple, Stupid_) et ça fonctionne. On vient de réaliser une méthode recursive pour résoudre un problème simplement en définissant une seule itération et ses conditions de sortie.
 
