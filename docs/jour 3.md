@@ -17,7 +17,7 @@ Voyez la page de cette librairie sur le site Python : [https://docs.python.org/f
 
 ## La classe (encore)
 
-Cette fois on va définir une classe Application qui va hériter de la classe Tk. Elle va donc _récupérer_ toutes les méthodes et attributs de la classe mère. En particulier, après avoir initilisé notre application, il faut lancer la méthode `mainloop()` qui permet le fonctionnement des éléments de la fenètre.
+Cette fois on va définir une classe Application qui va hériter de la classe Tk. Elle va donc _récupérer_ toutes les méthodes et attributs de la classe mère. En particulier, après avoir initialisé notre application, il faut lancer la méthode `mainloop()` qui permet le fonctionnement des éléments de la fenêtre.
 
 ```python
 #!/usr/bin/python
@@ -43,9 +43,9 @@ if __name__ == "__main__":
 
 ## Constructeur
 
-Comme d'habitude maintenant le constructeur va initialiser tous les éléments de notre application, c'est à dire ici dessiner la fenètre avec tous les objets de rendu qui s'y trouvent (les _widgets_).
+Comme d'habitude maintenant le constructeur va initialiser tous les éléments de notre application, c'est à dire ici dessiner la fenêtre avec tous les objets de rendu qui s'y trouvent (les _widgets_).
 
-Cette fois on va aussi devoir appeler le constructeur hérité dans notre propre constructeur, avant de définir les attributs de la la fenètre et de la remplir avec des _widgets_.
+Cette fois, on va aussi devoir appeler le constructeur hérité dans notre propre constructeur, avant de définir les attributs de la la fenêtre et de la remplir avec des _widgets_.
 
 ```python
 def __init__(self):
@@ -82,19 +82,19 @@ def __init__(self):
 
 _Et voilà_ (en anglais dans le texte) ! Mais expliquons quand même l'utilisation de quelques _widgets_.
 
-Tout d'abord chaque _widget_ doit faire référence à un élément de niveau supérieur qui le contient puisque celui-ci aura la responsabilitée de l'afficher quand certains paramètres changes (largeur de la fenètre, _etc._). C'est ce que l'on retrouve dans chaque instanciation d'un _widget_.
+Tout d'abord chaque _widget_ doit faire référence à un élément de niveau supérieur qui le contient puisque celui-ci aura la responsabilité de l'afficher quand certains paramètres changes (largeur de la fenêtre, _etc._). C'est ce que l'on retrouve dans chaque instanciation d'un _widget_.
 
 Ensuite, chaque _widget_ doit être placé dans l'élément de niveau supérieur, soit avec la méthode `pack()`, soit avec `grid()` qui permet de placer l'objet dans une matrice ligne/colonne.
 
-Enfin, les instances de `Frame` n'affiche rien d'autre que les objets qu'elle contiennent mais permettent de regrouper ces objets dans un carré correspondant.
+Enfin, les instances de `Frame` n'affichent rien d'autre que les objets qu'elle contiennent mais permettent de regrouper ces objets dans un carré correspondant.
 
 Si je ne suis pas très clair, je vous recommande de vous plonger dans la doc de la librairie Tkinter dont vous avez un lien en introduction.
 
 ### Attributs
 
-Déjà on peut modifier ou définir des attributs de la fenètre en appelant directement _self_ puisqu'on hérite de Tk, la fenètre principale.
+Déjà, on peut modifier ou définir des attributs de la fenêtre en appelant directement _self_ puisqu'on hérite de Tk, la fenêtre principale.
 
-On ajoute donc un titre et une icone à notre fenètre.
+On ajoute donc un titre et une icone à notre fenêtre.
 
 ### Label
 
@@ -108,7 +108,7 @@ Par contre, il nous faudra garder des références sur ces _Entry_ afin de pouvo
 
 ### Button
 
-Pour terminer, on ajoute une dernière _Frame_ qui contient elle-même deux _Buttons_ qui vont permettre de déclencer des actions.
+Pour terminer, on ajoute une dernière _Frame_ qui contient elle-même deux _Buttons_ qui vont permettre de déclencher des actions.
 
 ### Les _callback_
 
@@ -137,13 +137,13 @@ def _vider(self):
 
 Une fois que l'utilisateur de l'application aura rempli les éléments prédéfinis du Sudoku, il va cliquer sur le bouton Générer, ce qui va lancer la méthode homonyme comme indiqué précédemment.
 
-Après avoir vérifié la validité des valeurs présentent dans le cadriage formé par les `Entry`, cette méthode va maintenant instancier la classe `Matrice` que l'on a enregistrés à l'issue de l'exercice 3 dans le fichier `matrice.py`.
+Après avoir vérifié la validité des valeurs présentent dans le cadrillage formé par les `Entry`, cette méthode va maintenant instancier la classe `Matrice` que l'on a enregistrés à l'issue de l'exercice 3 dans le fichier `matrice.py`.
 
 On pourra alors utiliser les méthodes à notre dispositions pour faire calculer le Sudoku et afficher le résultat.
 
 Pour que cela soit « beau », on va utiliser un code couleur appliqué dans le rendu :
 
-* En rouge, les valeurs invalides (avec un fenètre d'erreur) ;
+* En rouge, les valeurs invalides (avec une fenêtre d'erreur) ;
 * En noir, les valeurs saisies par l'utilisateur ;
 * En bleu, les valeurs calculées par le programme.
 
@@ -200,7 +200,7 @@ Pour terminer cet exercice, il nous reste à écrire la méthode qui permet d'ef
 
 ## Conclusion
 
-J'espère que malgré la consicion et la richesse de cette présentation, j'ai pu vous transmettre quelques notions et vous donner envie de recommencer ou même de vous lancer dans le développement de petites applications en Python.
+J'espère que malgré la concision et la richesse de cette présentation, j'ai pu vous transmettre quelques notions et vous donner envie de recommencer ou même de vous lancer dans le développement de petites applications en Python.
 
 Sachez que ce langage peut remplacer dans certains cas Excel ou d'autres produits similaires pour vous faciliter des taches quotidiennes et répétitives.
 

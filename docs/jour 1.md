@@ -8,7 +8,7 @@
 
 ## 1. Mais Python, c'est quoi ?
 
-Si on se tourne vers [Wikipédia](https://wikipedia.org/), on trouve la définition suivante pour le [langage Python](https://fr.wikipedia.org/wiki/Python_(langage)) :
+Si on se tourne vers [Wikipédia](https://wikipedia.org/), on trouve la définition suivante pour le [langage Python](https://fr.wikipedia.org/wiki/Python_(langage) :
 
 > Python (/ˈpaɪ.θɑn/6) est un langage de programmation interprété, multi-paradigme et multiplateformes. Il favorise la programmation impérative structurée, fonctionnelle et orientée objet. Il est doté d'un typage dynamique fort, d'une gestion automatique de la mémoire par ramasse-miettes et d'un système de gestion d'exceptions ; il est ainsi similaire à Perl, Ruby, Scheme, Smalltalk et Tcl.
 >
@@ -59,7 +59,7 @@ Voilà, il s'agit de l'exécution d'une commande en mode _interactif_.
 
 Maintenant, allez dans la fenêtre qui s'appelle encore `<untitled>` pour y placer la même commande `print("Hello World")`.
 
-Ensuite allez dans le menu `Fichier` et choisissez `Enregistrer`, ou encore utilisez le raccourcis `Ctrl+S`. Une fenetre va s'ouvrir pour permettre de sauvegarder votre fichier, vous pouvez l'appeler `exercice1.py` et valider.
+Ensuite allez dans le menu `Fichier` et choisissez `Enregistrer`, ou encore utilisez le raccourcis `Ctrl+S`. Une fenêtre va s'ouvrir pour permettre de sauvegarder votre fichier, vous pouvez l'appeler `exercice1.py` et valider.
 
 Vous pouvez maintenant lancer le programme avec le bouton `Exécuter`.<br/>![](executer.png)
 
@@ -130,7 +130,7 @@ app = Application("Le Maître du Monde")
 app.run()
 {% endhighlight %}
 
-Pour aller plus loin dans les classes, je vous invite à consulter la documentation en ligne de Python : [https://docs.python.org/fr/3/tutorial/classes.html](https://docs.python.org/fr/3/tutorial/classes.html).
+Pour aller plus loin dans les classes, je vous invite à consulter la documentation en ligne de Python : [https://docs.python.org/fr/3/tutorial/classes.html](https://docs.python.org/fr/3/tutorial/classes.html).
 
 ---
 

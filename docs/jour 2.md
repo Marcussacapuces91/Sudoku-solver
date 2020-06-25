@@ -122,7 +122,7 @@ La méthode proposée ici pour résoudre le Sudoku est l'essai systématique de 
 - sur une colonne, chaque nombre de 1 à 9 ne peut apparaitre qu'une seule fois ;
 - dans un bloc de 3x3 (9 au total), chaque nombre de 1 à 9 ne peut apparaitre qu'une seule fois.
 
-On va donc remplir les cases vides avec les nombres autorisés jusqu'à la complétude de la matrice. Pour 81 cases, on a à chaque fois 10 possibilité soient environs 10^91 cas a étudier au maximum.
+On va donc remplir les cases vides avec les nombres autorisés jusqu'à la complétude de la matrice. Pour 81 cases, on a à chaque fois 10 possibilités soient environs 10^91 cas a étudier au maximum.
 
 Les cases déjà remplies ne peuvent plus être modifiées et les contraintes qui s'appliquent à chaque fois vont limiter le nombre de possibilités. De fait, on a beaucoup moins de possibilités que le maximum théorique. Si en plus on s'arrête à la première solution découverte, on va grandement limiter la complexité de la recherche. Enfin, comme l'indique l'article de **Pour la Science** les Sudoku habituellement rencontrés comportent déjà entre 25 et 30 cases remplies. La théorie indique d'un Sudoku valide pourrait démarrer avec seulement 17 cases. Dans ce cas, il ne sera surement pas résolu en un temps raisonnable par ce programme. Il faudrait se tourner vers d'autres algorithmes, par exemple mettant en oeuvre des heuristiques ou des méthodes statistiques de recherche de solutions.
 
