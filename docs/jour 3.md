@@ -98,7 +98,7 @@ On ajoute donc un titre et une icone à notre fenêtre.
 
 ### Label
 
-Il s'agit là d'un libellé fixe qui permet d'afficher n'importe quel texte. On lui applique sa méthode _pack()_ qui l'injecte dans la fenètre.
+Il s'agit là d'un libellé fixe qui permet d'afficher n'importe quel texte. On lui applique sa méthode _pack()_ qui l'injecte dans la fenêtre.
 
 ### Entry
 
@@ -112,7 +112,7 @@ Pour terminer, on ajoute une dernière _Frame_ qui contient elle-même deux _But
 
 ### Les _callback_
 
-Les _callback_ sont des méthodes qui sont définies par l'utilisateur mais appelées automatiquement par l'environnement (le _framework_ Tkinter) lorsque des évènements surviennent.
+Les _callback_ sont des méthodes qui sont définies par l'utilisateur mais appelées automatiquement par l'environnement (le _framework_ Tkinter) lorsque des événements surviennent.
 
 Dans notre cas, c'est utilisé par les _Button_ afin qu'ils indiquent à notre instance que l'un d'eux a été cliqué.
 
@@ -136,7 +136,7 @@ def _vider(self):
 
 Une fois que l'utilisateur de l'application aura rempli les éléments prédéfinis du Sudoku, il va cliquer sur le bouton Générer, ce qui va lancer la méthode homonyme comme indiqué précédemment.
 
-Après avoir vérifié la validité des valeurs présentent dans le cadrillage formé par les `Entry`, cette méthode va maintenant instancier la classe `Matrice` que l'on a enregistrés à l'issue de l'exercice 3 dans le fichier `matrice.py`.
+Après avoir vérifié la validité des valeurs présentent dans le quadrillage formé par les `Entry`, cette méthode va maintenant instancier la classe `Matrice` que l'on a enregistrés à l'issue de l'exercice 3 dans le fichier `matrice.py`.
 
 On pourra alors utiliser les méthodes à notre dispositions pour faire calculer le Sudoku et afficher le résultat.
 
