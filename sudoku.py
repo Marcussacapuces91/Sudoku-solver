@@ -1,7 +1,5 @@
 #!/usr/bin/python
-# -*- coding: <encoding name> -*-
-
-"""Exercice 4"""
+# -*- coding: utf-8 -*-
 
 from tkinter import Tk, Label, Frame, Entry, Button, LEFT, RIGHT, END, messagebox
 from matrice import Matrice

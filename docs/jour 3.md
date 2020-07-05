@@ -21,7 +21,7 @@ Cette fois on va définir une classe Application qui va hériter de la classe Tk
 
 ```python
 #!/usr/bin/python
-# -*- coding: <encoding name> -*-
+# -*- coding: utf-8 -*-
 
 """Exercice 4a"""
 
@@ -131,8 +131,7 @@ def _generer(self):
 def _vider(self):
     pass
 ```
-
-
+                          
 ### Méthode `Generer`
 
 Une fois que l'utilisateur de l'application aura rempli les éléments prédéfinis du Sudoku, il va cliquer sur le bouton Générer, ce qui va lancer la méthode homonyme comme indiqué précédemment.

@@ -19,7 +19,7 @@ Voici donc un code qui permet d'assurer ces premiers besoins (`exercice3.py`) :
 
 {% highlight python linenos %}
 #!/usr/bin/python
-# -*- coding: <encoding name> -*-
+# -*- coding: utf-8 -*-
 
 """Exercice 3"""
 
@@ -199,7 +199,7 @@ def resoudre(self) -> bool:
     """Cette méthode résoud la matrice de manière récursive dans la séquence suivante :
         - Chercher un emplacement libre, sinon on a terminé avec succès !
         - Essayer tous les nombres de 1 à 9 ;
-        - Si c'est une matrice valide, appliquer la même méthode recursivement ;
+        - Si c'est une matrice valide, appliquer la même méthode récursivement ;
         - Si le résultat est bon, succès ; sinon essayer encore."""
 
     try:
@@ -214,7 +214,7 @@ def resoudre(self) -> bool:
     return False
 ```
 
-C'est KISS (_Keep It Simple, Stupid_) et ça fonctionne. On vient de réaliser une méthode recursive pour résoudre un problème simplement en définissant une seule itération et ses conditions de sortie.
+C'est KISS (_Keep It Simple, Stupid_) et ça fonctionne. On vient de réaliser une méthode récursive pour résoudre un problème simplement en définissant une seule itération et ses conditions de sortie.
 
 > _Comme c'est beau la programmation !_  
 > _Coding Is Poetry_
@@ -225,9 +225,7 @@ Vous retrouverez ce fichier sous le nom `matrice.py`.
 
 {% highlight python linenos %}
 #!/usr/bin/python
-# -*- coding: <encoding name> -*-
-
-"""Exercice 3"""
+# -*- coding: utf-8 -*-
 
 class Matrice:
     """La Matrice est l'objet qui contient tous les chiffres du Sudoku dans un tableau de 9x9"""
@@ -318,7 +316,7 @@ class Matrice:
         """Cette méthode résoud la matrice de manière récursive dans la séquence suivante :
             1. Chercher un emplacement libre, sinon on a terminé avec succès !
             2. Essayer tous les nombres de 1 à 9 ;
-            3. Si c'est une matrice valide, appliquer la même méthode recursivement ;
+            3. Si c'est une matrice valide, appliquer la même méthode récursivement ;
             4. Si le résultat est bon, succès ; sinon essayer encore."""
         try:
             x, y = self._unVide()

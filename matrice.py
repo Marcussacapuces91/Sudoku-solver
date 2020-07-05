@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: <encoding name> -*-
+# -*- coding: utf-8 -*-
 
 class Matrice:
     """La Matrice est l'objet qui contient tous les chiffres du Sudoku dans un tableau de 9x9"""
@@ -87,10 +87,10 @@ class Matrice:
         return True
                 
     def resoudre(self) -> bool:
-        """Cette méthode résoud la matrice de manière récursive dans la séquence suivante :
+        """Cette méthode résout la matrice de manière récursive dans la séquence suivante :
             1. Chercher un emplacement libre, sinon on a terminé avec succès !
             2. Essayer tous les nombres de 1 à 9 ;
-            3. Si c'est une matrice valide, appliquer la même méthode recursivement ;
+            3. Si c'est une matrice valide, appliquer la même méthode récursivement ;
             4. Si le résultat est bon, succès ; sinon essayer encore."""
         try:
             x, y = self._unVide()
